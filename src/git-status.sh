@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 cd $1
 BRANCH=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
 STATUS=$(git status --porcelain 2>/dev/null| egrep "^(M| M)" | wc -l)
